@@ -1,0 +1,11 @@
+.dis-inl-grid {
+    display:inline-grid;
+    grid-template-columns: 300px 150px 300px 100px;
+    grid-template-rows: 100px 200px 300px;
+
+}
+.dis-grid {
+    display: grid;
+    grid-template-columns: 300px 150px 300px 100px;
+    grid-template-rows: 100px 200px 300px;
+} 

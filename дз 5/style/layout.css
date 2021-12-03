@@ -1,0 +1,31 @@
+.dis-inl-grid {
+    display:grid;
+}
+.grid-template{
+    grid-template:100px min-content/ 1fr 1fr;
+}
+.ex1{
+    grid-template:repeat(3, 100px )/ 1fr 1fr 1fr;
+    align-items:start;
+    justify-items: center;
+}
+.ex1 div:nth-child(even){
+    align-self:center;
+}
+.ex2{
+    grid-template:repeat(3, 100px)/ repeat(2,100px);
+    height: 400px;
+    place-content: space-between;
+}
+.ex2 div:nth-child(even){
+    place-self: center ;
+}
+.ex4{
+    grid-template:repeat(3, 100px)/ repeat(2,auto);
+}
+.ex4 div:nth-child(1){
+    align-self:end;
+}
+.ex4 div:nth-child(6){
+    align-self:end;
+}

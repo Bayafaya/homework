@@ -1,0 +1,40 @@
+.dis-inl-grid {
+    display:inline-grid;
+    grid-template-columns: [start-column] repeat(3, auto) [end-column];
+    grid-template-rows: repeat(4, auto);
+}
+.dis-inl-grid div:nth-child(1){
+    grid-column-start: start-column;
+    grid-column-end: end-column ;
+}
+.ex1 {
+    display:inline-grid;
+    grid-template-columns:repeat(3, auto);
+    grid-template-rows: [start-column] 100px 100px[vtoroy] 100px 100px[end-column];
+}
+.ex1 div:nth-child(1){
+grid-row-start:start-column;
+grid-row-end: vtoroy ;
+}
+.ex2{
+    display:inline-grid;
+    grid-template-columns: repeat(3, auto) ;
+    grid-template-rows: repeat(4, auto);
+}
+.ex2 div:nth-child(1){
+    grid-column-start:1 ;
+    grid-column-end:4 ;
+
+}
+.ex2 div:nth-child(2){
+grid-row-start:2 ;
+grid-row-end:8 ;
+}
+.ex3{
+    display:inline-grid;
+    grid-template-columns: repeat(3, auto) ;
+    grid-template-rows: repeat(4, auto);
+}
+.ex3 div:nth-child(1){
+grid-column: 1 /span 3;
+}
