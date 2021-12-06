@@ -1,0 +1,108 @@
+/* ===========================доп задание========================== */
+.dis-inl-grid {
+    display:grid;
+}
+.grid-template{
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas:"header header header info-section main-section"
+                        "content-section content-section content-section content-section content-section"
+                        " footer  footer footer footer footer";
+}
+.grid-template div:nth-child(1){
+    grid-area:header ; 
+}
+.grid-template div:nth-child(2){
+    grid-area:info-section ; 
+}
+.grid-template div:nth-child(3){
+    grid-area:  main-section;
+}
+.grid-template div:nth-child(4){
+    grid-area:content-section ; 
+}
+.grid-template div:nth-child(5){
+    grid-area:footer ; 
+}
+@media(max-width:768px){
+    .grid-template{
+        grid-template-rows: 80px auto auto  30px;
+        grid-template-areas:" header header header header header "
+                            "main-section main-section main-section main-section main-section"
+                            "info-section content-section content-section content-section content-section"
+                            " footer  footer footer footer footer";
+    }
+}
+@media(max-width:480px){
+    .grid-template{
+        grid-template-rows: 45px auto auto 5px;
+        grid-template-areas:" header header header header header "
+        "main-section main-section info-section info-section info-section"
+        "content-section content-section content-section content-section content-section"
+        " footer  footer footer footer footer";
+    }
+}
+
+/*================================== задание 2=========================  */
+
+
+
+.ex1{
+    grid-template-columns:100px 100px;
+    grid-template-rows:  100px 100px;
+    grid-template-areas:"A B"
+                        "C D"
+                        ;         
+}
+.ex1 div:nth-child(1){
+grid-area: A;
+}
+.ex1 div:nth-child(2){
+    grid-area: B;
+}
+.ex1 div:nth-child(3){
+    grid-area: C;
+}
+.ex1 div:nth-child(4){
+    grid-area: D;
+}
+@media(max-width:960px){
+    .ex1{
+        grid-template-rows: 100px 100px;
+        animation: eX1 infinite 5s;
+    }
+}
+@keyframes eX1{
+    0%{grid-template-areas:  "A B"
+                            "C D"
+    ;   }
+    25%{grid-template-areas:"B C"
+                            "D A"
+        ;   }
+        50%{grid-template-areas:"C D"
+                                "A B"
+            ;   }
+            100%{grid-template-areas:"D A"
+                                        "B C"
+                ;   }
+}
+/*================================== задание 2=========================  */
+
+.ex2{
+    grid-template-columns:100px 100px 1fr ;
+    grid-template-rows: 50px 1fr 1fr ;
+    
+}
+.ex2 div:nth-child(9) {
+margin: 50px;
+
+}
+ 
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+.dis-inl-grid {
+    display:grid;
+}
+.grid-template{
+    grid-template:repeat(3, 100px)/repeat(3,100px);
+    grid-auto-flow: column;
+}
+.ex1{
+    grid-template-columns:repeat(auto-fit, 70px);
+}
+.ex2{
+    grid-template-columns:repeat(auto-fill, 90px);
+}
+.ex3{
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+}

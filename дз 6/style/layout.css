@@ -1,0 +1,52 @@
+.dis-inl-grid {
+    display:grid;
+}
+.grid-template{
+    grid-template:repeat(3, 100px)/repeat(3,100px);
+    position: relative;
+}
+.grid-template div:nth-child(1){
+position: absolute;
+grid-column: 2/3;
+grid-row: 2/3;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+}
+.ex1{
+    grid-template:100px 100px/ 100px ;
+    position: relative;
+}
+.ex1 div:nth-child(2){
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.ex2{
+ 
+    grid-template:repeat(2, auto)/repeat(3, 1fr) ;
+}
+.ex2 div:nth-child(1){
+    order: 6 ;
+}
+.ex2 div:nth-child(2){
+    order :2 ;
+}
+.ex2 div:nth-child(3){
+    order: 3 ;
+}
+.ex2 div:nth-child(4){
+    order: 4 ;
+}
+.ex2 div:nth-child(5){
+    order: 5 ;
+}
+.ex2 div:nth-child(6){
+    order: 1 ;
+}
