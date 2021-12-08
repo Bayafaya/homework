@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+   /*  border:solid 1px #000; */
+}
+header{
+    background: #6e78b7 ;
+    padding: 55px 0;
+}
+header .menu{
+    display: flex;
+    justify-content: end;
+    
+}
+header .menu a{
+    background: #d86a43; ;
+    width: 260px;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    color: honeydew; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px -1px #000;
+    margin-left: 15px;
+}
+
+header .menu a:hover{
+    box-shadow: none;
+    background-color:#e44d26 ;
+}
+
+
+/* ============задание 2==================*/
+main{
+    background-color: bisque;
+    min-height: 400px; 
+}
+main .info-bar{
+    display: flex;
+    padding: 100px;
+}
+main .info-bar a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 9px;
+    justify-content: space-between;
+}
+main .info-bar a:nth-child(1){
+background-color: blueviolet;
+width: 300px;
+padding: 10px 0;
+margin-right: 10px;
+}
+main .info-bar a:nth-child(2){
+background-color: chartreuse;
+width: 600px;
+padding: 10px 0;
+margin-right: 10px;
+}
+main .info-bar a:nth-child(3){
+background-color: cyan;
+width: 300px;
+padding: 10px 0;
+}
+/* ============задание 3==================*/
+.name{
+    font-weight: bold;
+    font-size: 20px;
+    color: #252B42;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .tema{
+        font-size: 40px;
+    }
+.head{
+    background-color:#fff ;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    padding: 0px;
+}
+.head .first .text{
+    color:#252B42;
+    font-weight: bold;
+    width:150px;
+  
+}
+.head .first{
+    align-items: center;
+}
+.head .first:nth-child(1){
+margin-right: 20px;
+margin-left: 100px;
+}
+.head .first:nth-child(2){
+margin-right: 20px;
+ }
+.head .first:nth-child(3){
+ margin-right: 20px;
+ }
+      

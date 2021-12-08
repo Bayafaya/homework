@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+   /*  border:solid 1px #000; */
+}
+/*  =========доп задание====== */
+header{
+    background: #6e78b7 ;
+    padding: 55px 0;
+}
+header .menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+header .menu a{
+    background: #d86a43; ;
+    width: 260px;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    color: honeydew; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px -1px #000;
+}
+header .menu a:hover{
+    box-shadow: none;
+    background-color:#e44d26 ;
+}
+main{
+     background-color: #deeafb;
+     padding: 55px;
+}
+.technology{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.technology img{
+    width: 360px;
+    height: 200px;
+}
+.technology .arrow{
+    width:41px ;
+    height: 22px;
+}
+
+/*==================задание 2============= */
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 550px;
+    height: 250px;
+    margin-bottom: 35px;
+}
+.gallery2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery2 img{
+    width: 260px;
+    height: 250px;
+    margin-bottom: 35px;
+}
+
+
+
+
+/* =============задание 3======= */
+.ex1{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color:#e44d26;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.it1{
+    width: 100px;
+    height: 100px;
+    background-color:lightgreen;
+   
+}
+
+.ex2{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color:#e44d26;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.ex3{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color:#e44d26;
+    justify-content: center;
+    align-items: center;
+}
