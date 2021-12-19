@@ -1,0 +1,78 @@
+PS C:\efsol\дз\git ex> git init
+Initialized empty Git repository in C:/efsol/дз/git ex/.git/
+PS C:\efsol\дз\git ex> git status
+On branch master
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+        main.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\efsol\дз\git ex> git commit -m "first l"
+[master (root-commit) 3c7d847] first l
+ 3 files changed, 36 insertions(+)
+ create mode 100644 home.html
+ create mode 100644 nav .html
+PS C:\efsol\дз\git ex> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\efsol\дз\git ex> git stasus
+git: 'stasus' is not a git command. See 'git --help'.
+
+        status
+PS C:\efsol\дз\git ex>  git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\efsol\дз\git ex> git diff
+diff --git a/home.html b/home.html
+index c57ed26..4dee8f9 100644
+--- a/home.html
+diff --git a/home.html b/home.html
+index c57ed26..4dee8f9 100644
+--- a/home.html
+diff --git a/home.html b/home.html
+diff --git a/home.html b/home.html
+index c57ed26..4dee8f9 100644
+--- a/home.html
+index c57ed26..4dee8f9 100644
+diff --git a/home.html b/home.html
+index c57ed26..4dee8f9 100644
+--- a/home.html
++++ b/home.html
+@@ -7,6 +7,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <p>Lorem ipsum dolor sit amet.</p>
++    <p>Lorem ipsum dolor sit amet.dop vords ya dobavil</p>
+:...skipping...
+PS C:\efsol\дз\git ex> git add .
+PS C:\efsol\дз\git ex> git diff
+PS C:\efsol\дз\git ex> git diff --staged
+diff --git a/home.html b/home.html
+index c57ed26..4dee8f9 100644
+--- a/home.html
++++ b/home.html
+@@ -7,6 +7,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    <p>Lorem ipsum dolor sit amet.</p>
++    <p>Lorem ipsum dolor sit amet.dop vords ya dobavil</p>
+ </body>
+ </html>
+\ No newline at end of file
+PS C:\efsol\дз\git ex> git commit -m "second l"
+[master 8552ea4] second l
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\efsol\дз\git ex> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\efsol\дз\git ex> 
+

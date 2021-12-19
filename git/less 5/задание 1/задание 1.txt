@@ -1,0 +1,24 @@
+PS C:\efsol\дз\git ex> git remote add origin https://github.com/Bayafaya/git-example.git
+PS C:\efsol\дз\git ex> git branch -M main
+PS C:\efsol\дз\git ex> git push -u origin main
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Bayafaya/git-example.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS C:\efsol\дз\git ex> git add .
+PS C:\efsol\дз\git ex> git commit -m "changed0"
+[main eed2d26] changed0
+ 1 file changed, 1 deletion(-)
+PS C:\efsol\дз\git ex> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Bayafaya/git-example.git
+   70527a0..eed2d26  main -> main

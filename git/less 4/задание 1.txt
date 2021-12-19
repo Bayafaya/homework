@@ -1,0 +1,33 @@
+PS C:\efsol\дз\git ex> git init
+PS C:\efsol\дз\git ex> git add .
+PS C:\efsol\дз\git ex> git commit -m "intial"
+[master (root-commit) a3c67fa] intial
+ 1 file changed, 14 insertions(+)
+ create mode 100644 index.html
+commit a3c67fa97e1f1026a882a29f37514d3a0ec174a8 (HEAD -> master)
+Author: Bayel_Ibraev <bayelibraev1@gmail.com>
+Date:   Sun Dec 19 02:22:06 2021 +0600
+
+    intial
+PS C:\efsol\дз\git ex> git status
+On branch master
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\efsol\дз\git ex> git add .
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+PS C:\efsol\дз\git ex> git restore --staged .
+PS C:\efsol\дз\git ex> git status
+On branch master
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\efsol\дз\git ex> git restore index.html
+PS C:\efsol\дз\git ex> git status
+On branch master
+nothing to commit, working tree clean
